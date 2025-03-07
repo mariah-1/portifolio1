@@ -26,7 +26,7 @@ body {
     margin-bottom: 50px;
     margin-bottom: 50px;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(223, 216, 255));
-  
+    transition: .5s;
 }
 
 
@@ -47,6 +47,7 @@ body.home {
 .cabecalho {
     display: flex;
     justify-content: center;
+  
 }
 
 .cabecalho__menu {
@@ -234,6 +235,7 @@ body.dark {
     position: absolute;
     z-index: 1000;
     background-image: url('imagens-projeto/Portfólio_de_Modelo_branco-removebg-preview.png');
+    background-size: 44%;
 }
 
 body.dark .cabecalho__menu__links {
@@ -248,14 +250,19 @@ body.dark .apresentacao__links__link {
 
 @media (max-width: 768px) {
     
-   
+    
     body.home {
-        background-position:center 42%; 
+        background-position:center 50%; 
         background-size: 70%; 
         position: relative;
-        margin-top: 80px;
-        
+        top: 10px;
+       
       }
+
+      body.dark {
+        background-image: url('imagens-projeto/Portfólio_de_Modelo_branco-removebg-preview.png');
+        background-size: 93%;
+    }
 
       body.sobremim {
         display: flex;
@@ -263,7 +270,8 @@ body.dark .apresentacao__links__link {
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 80px;
+        
+        
     }
   
     .apresentacao {
@@ -272,68 +280,101 @@ body.dark .apresentacao__links__link {
         margin-left: 0;
         padding: 20px;
         gap: 10%;
-        margin-top: 110px;
+        margin-top: 200px;
         padding-bottom: 80px;
+      
     }
     
+    .apresentacao__conteudo {
+        padding: 0 20px; 
+    }
 
     .apresentacao__conteudo__sobremim {
         align-items: center;
         width: 100%;
-        
+     
     }
 
     .apresentacao__conteudo__texto {
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 100 auto;
-        margin-top: 70px;
-}
+    
+    }
 
-.apresentacao__conteudo__titulo {
-    font-size: 2.5rem;
-    margin-bottom: -30px;
-}
+    .apresentacao__conteudo__texto__sobremim1 {
+        font-size: 1.2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+    
+    }
 
-.apresentacao__conteudo__texto__sobremim {
-    font-size: 1rem;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
-   
-}
+    .apresentacao__conteudo__texto__sobremim2 {
+        font-size: 1.2rem;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    
+    }
+
+
+    .apresentacao__conteudo__titulo__sobremim {
+        font-size: 2.5rem;
+        margin-bottom: -30px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2.5rem;
+        margin-bottom: -30px;
+        
+    }
 
     .img-minhafoto {
-        margin-left: 75%;
-        width: 130%;
+        margin-left: 85%;
+        width: 150%;
         position: relative;
-        top: 0px;
+        top: -10px;
     }
+
+    .img-minhafoto-sobremim {
+        margin-left: 95%;
+        margin-top: -150px;
+        width: 170%;
+    }
+
     .apresentacao__links {
         margin-bottom: 0px;
         
       }
 
-    .img-minhafoto-sobremim {
-        margin-left: 72%;
-        margin-top: -110px;
-        width: 120%;
-    }
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        }
 
+    .cabecalho__sobremim {
+     display: flex;
+     justify-content: center;
+     position: relative;
+     width: 100%;
+     top: 0;
+     left: 0;
+     }        
+        
     .cabecalho__menu {
-        padding: 5% 5% ; 
+        padding: 8% ; 
+        z-index: 10;
         
     }
 
     .cabecalho__menu__sobremim {
-        padding: 5% 0% 0% 5%;
+        padding: 8% 0% 0% 0%;
         
-    }
-
-    .cabecalho {
-        display: flex;
-        justify-content: center;
-    
     }
 
     .rodape {
