@@ -32,9 +32,9 @@ body {
 
 body.home {
     
-    display: flex; /* Ativa o modelo flexbox */
-    flex-direction: column; /* Garante que os elementos sejam empilhados corretamente */
-    justify-content: center; /* Alinha o conteúdo ao centro*/
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
     color: var(--cor-primaria);
     background-repeat: no-repeat;
     background-image: url('imagens-projeto/Portfólio_de_Modelo__1_-removebg-preview.png');
@@ -116,20 +116,20 @@ body.home {
 
 .img-minhafoto-sobremim {
     width: 60%;
-    transform: translateX(-30%); /* Mover a imagem para a esquerda */
+    transform: translateX(-30%); 
     margin-top: -5%;
 }
 
 .img-minhafoto {
     width: 60%;
-    transform: translateX(-30%); /* Mover a imagem para a esquerda */
+    transform: translateX(-30%); 
     margin-top: -5%;
 }
 
 .apresentacao__conteudo__texto__sobremim {
     font-size: 1.25rem;
     font-family: var(--font-principal);
-    text-align: center; /* Centraliza o texto do parágrafo */
+    text-align: center; 
     margin-top: 20px;
     width: 410px;
 }
@@ -137,7 +137,7 @@ body.home {
 .apresentacao__conteudo__texto {
     font-size: 1.25rem;
     font-family: var(--font-principal);
-    text-align: center; /* Centraliza o texto do parágrafo */
+    text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
 
@@ -151,16 +151,16 @@ body.home {
 
 .apresentacao__links {
     display: flex;
-    justify-content: center; /* Alinha os botões à direita */
+    justify-content: center; 
     gap: 30px;
 }
 
 .apresentacao__links__link {
     display: flex;
     gap: 10px;
-    border-style: inset; /* Define a borda como inset */
-    border-width: 2px; /* Define a espessura da borda */
-    border-color: var(--cor-terciaria); /* Define a cor da borda */
+    border-style: inset; 
+    border-width: 2px; 
+    border-color: var(--cor-terciaria); 
     padding: 10px;
     width: 150px;
     text-align: center;
@@ -171,7 +171,7 @@ body.home {
     color: var(--cor-terciaria);
     font-family: var(--font-principal);
     pointer-events: auto;
-    z-index: 2; /* Coloca o link no topo */
+    z-index: 2; 
     justify-content: center;
     align-items: center;
 }
@@ -255,7 +255,7 @@ body.dark .apresentacao__links__link {
         background-position:center 50%; 
         background-size: 70%; 
         position: relative;
-        top: 10px;
+        top: 50px;
        
       }
 
